@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelDestinatonPage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="text-2xl font-bold text-blue-600">TravelNow</div>
+
+          <!-- Menu (Desktop) -->
+          <div class="hidden md:flex space-x-8 font-medium">
+            <a class="text-gray-700 hover:text-blue-600 transition">Home</a>
+            <a class="text-gray-700 hover:text-blue-600 transition"
+              >Destinations</a
+            >
+            <a class="text-gray-700 hover:text-blue-600 transition">About</a>
+          </div>
+
+          <!-- Button -->
+          <div class="hidden md:block">
+            <a
+              class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+            >
+              Book Now
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden">
+            <button class="text-gray-700 focus:outline-none">☰</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Popular Destinations Section -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- Section Heading -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800">Popular Destinations</h2>
+          <p class="text-gray-600 mt-3">
+            Explore our most loved travel spots around the world
+          </p>
+        </div>
+
+        <!-- Destination Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <img
+              src="https://i.ibb.co.com/Xk6Lgp1n/3d4394e16eb27eef2c0441ea837d91e2.jpg"
+              alt="Paris"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-gray-800">Paris</h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                The city of lights and romance.
+              </p>
+              <p class="text-blue-600 font-bold mt-3">$799</p>
+              <button
+                class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img
+              src="https://i.ibb.co.com/mCD2w7QY/5a941f707d253f086b4ad16aa820bd9d.jpg"
+              alt="Maldives"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-gray-800">Maldives</h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Crystal clear water & luxury resorts.
+              </p>
+              <p class="text-blue-600 font-bold mt-3">$1299</p>
+              <button
+                class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img
+              src="https://i.ibb.co.com/ksYgDDQr/b5b9508f565c91e781714445beca26e4.jpg"
+              alt="Dubai"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-gray-800">Dubai</h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Luxury shopping & desert adventure.
+              </p>
+              <p class="text-blue-600 font-bold mt-3">$999</p>
+              <button
+                class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img
+              src="https://i.ibb.co.com/G3Vjcbf5/797f10311478899b73037d563d76b7f4.jpg"
+              alt="Bali"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-gray-800">Bali</h3>
+              <p class="text-gray-600 mt-2 text-sm">
+                Beautiful beaches & peaceful temples.
+              </p>
+              <p class="text-blue-600 font-bold mt-3">$899</p>
+              <button
+                class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- Section Heading -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-800">Why Choose Us</h2>
+          <p class="text-gray-600 mt-3">
+            We provide the best travel experience for you
+          </p>
+        </div>
+
+        <!-- Features -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <!-- Feature 1 -->
+          <div
+            class="p-6 bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
+          >
+            <div class="text-4xl mb-4">✈️</div>
+            <h3 class="text-xl font-semibold text-gray-800">
+              Best Flight Deals
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              Get affordable and exclusive flight offers worldwide.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="p-6 bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
+          >
+            <div class="text-4xl mb-4">🏨</div>
+            <h3 class="text-xl font-semibold text-gray-800">Luxury Hotels</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              Stay in top-rated hotels with premium comfort.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="p-6 bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
+          >
+            <div class="text-4xl mb-4">🛡️</div>
+            <h3 class="text-xl font-semibold text-gray-800">Safe & Secure</h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              Your safety and satisfaction are our top priority.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div
+            class="p-6 bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition duration-300"
+          >
+            <div class="text-4xl mb-4">💰</div>
+            <h3 class="text-xl font-semibold text-gray-800">
+              Affordable Packages
+            </h3>
+            <p class="text-gray-600 mt-2 text-sm">
+              Enjoy premium trips at budget-friendly prices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4">TravelNow</h2>
+            <p class="text-sm">
+              Explore the world with us. We provide the best travel packages,
+              amazing destinations, and unforgettable experiences.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white transition">Home</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition">Destinations</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Packages</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Popular Destinations -->
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-4">
+              Top Destinations
+            </h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:text-white transition">Paris</a></li>
+              <li>
+                <a href="#" class="hover:text-white transition">Maldives</a>
+              </li>
+              <li><a href="#" class="hover:text-white transition">Dubai</a></li>
+              <li><a href="#" class="hover:text-white transition">Bali</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-4">Contact Us</h3>
+            <p class="text-sm">📍 123 Travel Street, Your City</p>
+            <p class="text-sm mt-2">📞 +123 456 7890</p>
+            <p class="text-sm mt-2">✉️ info@travelnow.com</p>
+
+            <!-- Social Icons -->
+            <div class="flex space-x-4 mt-4 text-lg">
+              <a href="#" class="hover:text-white transition">🌐</a>
+              <a href="#" class="hover:text-white transition">📘</a>
+              <a href="#" class="hover:text-white transition">📸</a>
+              <a href="#" class="hover:text-white transition">🐦</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm">
+          © 2026 TravelNow. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
